@@ -1,0 +1,92 @@
+<link rel="import" href="../head.html?__inline">
+<script src="../../js/app/oansBefore/audit-report.js"></script>
+<style type="text/css">
+.opean {
+    font-size: 0;
+    line-height: 0;
+    border-width: 10px;
+    border-color: #d6d6d6;
+    border-bottom-width: 0;
+    border-style: dashed;
+    border-top-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: relative;
+    top: 0px;
+}
+
+.close {
+    font-size: 0;
+    line-height: 0;
+    border-width: 10px;
+    border-color: #333;
+    border-top-width: 0;
+    border-style: dashed;
+    border-bottom-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+}
+</style>
+<div class="place">
+    <span>位置：</span>
+    <ul>
+    </ul>
+</div>
+<form id="jsForm">
+    <div class="form-body">
+        <ul class="form-info" id="form-info">
+            <div class="form-title">
+                <span id="page-title" class="pageTitle">用户基本信息</span><i class="opean" style="margin-left: 150px;"> </i>
+                <div class="tools" style="float: right;margin-left: 20px;">
+                    <ul class="toolbar">
+                        <li style="display:block;line-height: 33px;display: table;white-space: normal;position: absolute;top: -1px;right: -6px;width: 76px;" id="backBtn"><span style="width: 75px;position: absolute;right: 0;margin: 0;margin-bottom: -4px;"><img src="/static/images/t01.png">&nbsp;&nbsp;返回&nbsp;&nbsp;</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pannel">
+                <table id="tableList" data-show-export="true" style="width: 100%"></table>
+                <table id="tableList1" data-show-export="true" style="width: 100%"></table>
+                <table id="tableList2" data-show-export="true" style="width: 100%"></table>
+                <table id="tableList3" data-show-export="true" style="width: 100%"></table>
+            </div>
+            <div class="form-title"><span id="page-title2" class="pageTitle2">身份认证</span><i class="close" style="margin-left: 120px;"> </i></div>
+            <div class="pannel1" style="display:none;">
+                <table id="tableList4" data-show-export="true" style="width: 100%" data-type='pdf'></table>
+            </div>
+            <div class="form-title"><span id="page-title3" class="pageTitle3">芝麻分认证</span><i class="close" style="margin-left: 134px;"> </i></div>
+            <div class="pannel2" style="display:none;">
+                <table id="tableList5" data-show-export="true" style="width: 100%" data-type='pdf'></table>
+            </div>
+            <!-- <div class="form-title"><span id="page-title6" class="pageTitle6">欺诈识别</span><i class="close" style="margin-left: 120px;"> </i></div>
+            <div class="pannel5" style="display:none;">
+                <table id="tableList11" data-show-export=" true" style="width: 100%"></table>
+            </div>   -->
+            <div class="form-title"><span id="page-title4" class="pageTitle4">运营商认证</span><i class="close" style="margin-left: 134px;"> </i></div>
+            <div class="pannel3" style="display:none;">
+                <div class="tools">
+                    <ul class="toolbar">
+                        <li style="display:block;" id="CompatibleBtn"><span><img src="/static/images/t01.png"></span>查看运营商兼容报告</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-title"><span id="page-title7" class="pageTitle7">同盾贷前审核报告</span><i class="close" style="margin-left: 120px;"> </i></div>
+            <div class="pannel6" style="display:none;">
+                <div class="tools">
+                    <ul class="toolbar">
+                        <li style="display:block;" id="preLoanReviewBtn"><span><img src="/static/images/t01.png"></span>查看贷前审核报告</li>
+                        <li style="display:block;" id="updatePreLoanReviewBtn"><span><img src="/static/images/t01.png"></span>更新贷前审核报告</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-title"><span id="page-title5" class="pageTitle5">通讯录</span><i class="close" style="margin-left: 106px;"> </i></div>
+            <div class="pannel4" style="display:none;">
+                <table id="tableList33" data-show-export="true" style="width: 100%"></table>
+            </div>
+        </ul>
+    </div>
+</form>
+<script src="//api.map.baidu.com/api?v=2.0&ak=GtNrG008U04GONzKSDHiW70GxurUUhlU&s=1"></script>
+<link rel="import" href="../foot.html?__inline">

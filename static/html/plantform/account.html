@@ -1,0 +1,91 @@
+<link rel="import" href="../head.html?__inline">
+<script src="../../js/app/plantform/account.js"></script>
+<style>
+    .account-w {
+        width: 100%;
+        padding: 30px 10px;
+        overflow: hidden;
+    }
+    
+    .account-list-w {
+        width: 350px;
+        float: left;
+        padding: 20px;
+    }
+    
+    .account-list {
+        height: 180px;
+        border: 1px solid #ced9df;
+        padding: 20px;
+        position: relative;
+    }
+    
+    .account-fs {
+        width: 100%;
+        font-size: 15px;
+        line-height: 2;
+    }
+    
+    .account-fs p {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    .account-btn {
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+    }
+</style>
+<div class="place">
+    <span>位置：</span>
+    <ul>
+    </ul>
+</div>
+
+<div class="account-w">
+    <div class="account-list-w">
+        <div class="account-list">
+            <div class="account-fs">
+                
+                <div class="account-fs">托管账户：
+                    <p class="account-amount" id="amount-CNY"></p>
+                </div>
+            </div>
+            <div class="account-btn">
+                <div class="btn" id="accoutBtn">资金流水</div>
+            </div>
+        </div>
+    </div>
+    <div class="account-list-w">
+        <div class="account-list">
+            <div class="account-fs">
+                <!-- <p class="account-amount" id="amount1-CNY"></p> -->
+                <div class="account-fs">人民币余额：
+                    <p class="account-amount" id="amount1-CNY"></p>
+                </div>
+            </div>
+            <div class="account-btn">
+                <div class="btn" id="CNYaccoutBtn">资金流水</div>
+                <!-- <div class="btn" id="accouBtn">提现</div> -->
+            </div>
+        </div>
+    </div>
+    <div class="account-list-w">
+        <div class="account-list">
+            <div class="account-fs">
+                <!-- <p class="account-amount" id="amount1-CNY"></p> -->
+                <div class="account-fs">积分余额：
+                    <p class="account-amount" id="amount1-JF"></p>
+                </div>
+            </div>
+            <div class="account-btn">
+                <div class="btn" id="JFaccoutBtn">资金流水</div>
+                <!-- <div class="btn" id="accouBtn">提现</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<link rel="import" href="../foot.html?__inline">

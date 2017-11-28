@@ -1,0 +1,115 @@
+<link rel="import" href="../head.html?__inline">
+<script src="../../js/app/oansBefore/audit-netReport.js"></script>
+<style type="text/css">
+.opean {
+    font-size: 0;
+    line-height: 0;
+    border-width: 10px;
+    border-color: #d6d6d6;
+    border-bottom-width: 0;
+    border-style: dashed;
+    border-top-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: relative;
+    top: 0px;
+}
+
+.close {
+    font-size: 0;
+    line-height: 0;
+    border-width: 10px;
+    border-color: #333;
+    border-top-width: 0;
+    border-style: dashed;
+    border-bottom-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+}
+.report_title {
+    /*width: 100px;*/
+    display: inline-block;
+    margin-right: 20px;
+}
+.report_info {
+    display: inline-block;
+}
+</style>
+<div class="place">
+    <span>位置：</span>
+    <ul>
+    </ul>
+</div>
+<form id="jsForm">
+    <div class="form-body">
+        <ul class="form-info" id="form-info">
+            <div style="]width: 100%;height: 30px;">
+                <!-- <div class="report_title">编号：<span id="num" class="report_info" style="display: inline-block;">1111</span></div> -->
+                <!-- <div class="report_title">报告时间：<span id="time" class="report_info" style="display: inline-block;">2222</span></div> -->
+            </div>
+            <div class="form-title">
+                <span id="page-title" class="pageTitle">用户申请表检测</span><i class="opean" style="margin-left: 116px;"> </i>
+                <div class="tools" style="float: right;margin-left: 20px;">
+                    <ul class="toolbar">
+                        <li style="display:block;line-height: 33px;display: table;white-space: normal;position: absolute;top: -1px;right: -6px;width: 76px;" id="backBtn"><span style="width: 75px;position: absolute;right: 0;margin: 0;margin-bottom: -4px;"><img src="/static/images/t01.png">&nbsp;&nbsp;返回&nbsp;&nbsp;</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pannel">
+                <table id="tableList" data-show-export="true" style="width: 100%"></table>
+            </div>
+            <div class="form-title"><span id="page-title1" class="pageTitle1">用户信息检测</span><i class="close" style="margin-left: 100px;"> </i></div>
+            <div class="pannel1" style="display:none;">
+                <table id="tableList1" data-show-export="true" style="width: 100%"></table>
+            </div>
+            <div class="form-title"><span id="page-title2" class="pageTitle2">用户行为检测</span><i class="close" style="margin-left: 100px;"> </i></div>
+            <div class="pannel2" style="display:none;">
+                <table id="tableList2" data-show-export="true" style="width: 100%"></table>
+            </div>
+            <div class="form-title"><span id="page-title3" class="pageTitle3">运营商数据</span><i class="close" style="margin-left: 84px;"> </i></div>
+            <div class="pannel3" style="display:none;">
+                <table id="tableList3" data-show-export="true" style="width: 100%"></table>
+            </div>  
+            <div class="form-title"><span id="page-title4" class="pageTitle4">联系人区域汇总</span><i class="close" style="margin-left: 114px;"> </i></div>
+            <div class="pannel4" style="display:none;">
+                <table id="tableList4" data-show-export="true" style="width: 100%"></table>
+            </div>
+            <div class="form-title"><span id="page-title5" class="pageTitle5">运营商数据分析</span><i class="close" style="margin-left: 114px;"> </i></div>
+            <div class="pannel5" style="display:none;">
+                <table id="tableList5" data-show-export="true" style="width: 100%"></table>
+            </div>
+            <div class="form-title"><span id="page-title6" class="pageTitle6">常用服务</span><i class="close" style="margin-left: 70px;"> </i></div>
+            <div class="pannel6" style="display:none;">
+                <table id="tableList6" data-show-export="true" style="width: 100%"></table>
+            </div>
+            <div class="form-title"><span id="page-title7" class="pageTitle7">联系人信息和地址信息</span><i class="close" style="margin-left: 150px;"> </i></div>
+            <div class="pannel7" style="display:none;">
+                <table id="tableList7" data-show-export="true" style="width: 100%"></table>
+                <table id="tableList8" data-show-export="true" style="width: 100%"></table>
+                <table id="tableList9" data-show-export="true" style="width: 100%"></table>                
+            </div>
+            <div class="form-title"><span id="page-title8" class="pageTitle8">电商数据分析开始</span><i class="close" style="margin-left: 124px;"> </i></div>
+            <div class="pannel8" style="display:none;">
+                <table id="tableList10" data-show-export="true" style="width: 100%"></table>
+            </div>             
+            <div class="form-title"><span id="page-title9" class="pageTitle9">出行数据分析</span><i class="close" style="margin-left: 100px;"> </i></div>
+            <div class="pannel9" style="display:none;">
+                <table id="tableList11" data-show-export="true" style="width: 100%"></table>
+            </div>  
+            <div class="form-title"><span id="page-title10" class="pageTitle10">同盾贷前审核报告</span><i class="close" style="margin-left: 120px;"> </i></div>
+            <div class="pannel10" style="display:none;">
+                <div class="tools">
+                    <ul class="toolbar">
+                        <li style="display:block;" id="preLoanReviewBtn"><span><img src="/static/images/t01.png"></span>查看贷前审核报告</li>
+                        <li style="display:block;" id="updatePreLoanReviewBtn"><span><img src="/static/images/t01.png"></span>更新贷前审核报告</li>
+                    </ul>
+                </div>
+            </div>
+        </ul>
+    </div>
+</form>
+
+<link rel="import" href="../foot.html?__inline">

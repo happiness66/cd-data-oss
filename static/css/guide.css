@@ -1,0 +1,72 @@
+body {
+  font-family : Arial, Helvetica, Sans-Serif;
+  background:#fff;
+  overflow-x:hidden;
+  overflow-y:auto
+  color: #666;
+}
+a {
+  cursor: pointer;
+  text-decoration:none;
+}
+input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body,div,span,
+applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+dd,dl,dt,li,ol,ul,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ol,ul {
+	list-style: none;
+}
+q:before,q:after,
+blockquote:before,blockquote:after {
+	content: "";
+}
+body,td,li,input, textarea, select, button{font-size:12px; color:#666;resize:none;}
+
+.topnew{width: 100%;height: 30px;position:relative;background: #EDF2EF;z-index:1000}
+.topnew .main{width: 1200px;margin: 0 auto;overflow: visible;background: #EDF2EF;line-height: 30px;}
+.topnew .main a:hover{color: #19bf96;}
+.topnew .main .left span.index{margin-top: -30px;margin-left: 160px;}	
+.topnew .main .right{float:right;}
+.topnew .main .right a:link{color: #666;text-decoration: none;}
+.topnew .main .right a:hover{color: #19BF96;}
+.topnew .main .right a.red{color: #FF0000;}
+.logo{ float:left;margin-top:10px; margin-right:20px; overflow:hidden;}
+.logo img{position: absolute;}
+.logo span{ height:70px;}
+.head{width:300px;height:105px; position:relative;top:10px;left: 198px; z-index:103;}
+.nav ul{overflow: visible;}
+.nav ul .download_dropdown{width:162px;position:absolute;top: 39px;display: none;border: solid 1px #ECE9E9;border-radius:3px;box-shadow:0px 2px 4px 0px rgba(0,0,0,0.13);border-radius:3px 0px 0px 0px 3px 3px 3px;}
+.nav ul .download_dropdown ul{overflow:hidden;width:162px;height:94px;background:#ffffff;}
+.nav ul .download_dropdown ul li{float:left;width:162px}
+.nav ul .download_dropdown ul li a{padding:0;display:block;text-align:center;width:100%}
+.nav ul li#appdownload_li{background: url(../images/icon.png) no-repeat 0 0;background-position:116px 20px;position:relative;z-index:999}
+.appdownload_li:hover .download_dropdown{display:block}
+#navul{overflow: visible;margin-left: 500px;position: absolute;top: -5px;}
+.nav{ position:relative; top: -30px;left:0;height:45px; background:#fff; line-height:40px; color:#333; border-bottom:3px solid #19bf96;width: 100%;}
+.nav ul{ float:left;width:900px; height:45px; background:#FFF;}
+.nav ul li a#7{color: red;}
+.nav ul li{ float:left; line-height:45px; padding-left:5px; padding-right:5px;}
+.nav ul li a{ color:#666; font-size:16px; display:block;padding-left:44px; padding-right:20px; float:left  }
+.nav ul  a{height:45px; line-height:45px; font-weight:bold; color:#19bf96;}
+.nav ul li a:hover{color:#19bf96;}
+#banner img {width: 100%;background-size: cover;margin-top: -32px;}
+
+.apply-form-info{padding-left: 180px}
